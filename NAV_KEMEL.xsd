@@ -1,0 +1,1912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/KEMEL/15.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/KEMEL/15.0">
+   <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+           schemaLocation="form_xsd_metaschema.xsd"/>
+   <element name="Doc_KEMEL"
+            type="tns:Doc_KEMEL_Type"
+            meta:metaType="DocMetaType">
+      <annotation>
+         <documentation>Bevallás a kőolajtermék-előállító, a megújuló energiaforrásból energiát termelők és a kiegyenlítő szabályozási kapacitás szolgáltatás különadójáról, valamint a légitársaságok hozzájárulásáról</documentation>
+      </annotation>
+   </element>
+   <simpleType name="Enum_KEMEL_0A0001D004A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="F"/>
+         <enumeration value="V"/>
+         <enumeration value="A"/>
+         <enumeration value="M"/>
+         <enumeration value="E"/>
+         <enumeration value="S"/>
+         <enumeration value="B"/>
+         <enumeration value="D"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KEMEL_0A0001D005A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KEMEL_0A0001D003A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="H"/>
+         <enumeration value="O"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_KEMEL_0FXXXXC0001AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="232"/>
+         <enumeration value="481"/>
+         <enumeration value="215"/>
+      </restriction>
+   </simpleType>
+   <complexType name="Doc_KEMEL_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_KEMEL"
+                  type="tns:Form_KEMEL_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>KEMEL részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Form_KEMEL_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány KEMEL részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120001"
+                  type="tns:Block_KEMEL_120001_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Azonosító adatok</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120014"
+                  type="tns:Block_KEMEL_120014_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Bevallás a kőolajtermék-előállító különadójáról</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120018"
+                  type="tns:Block_KEMEL_120018_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Bevallás a megújuló energiaforrásból energiát termelők különadójáról</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120025"
+                  type="tns:Block_KEMEL_120025_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Bevallás a kiegyenlítő szabályozási kapacitás szolgáltatás különadójáról</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120030"
+                  type="tns:Block_KEMEL_120030_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Bevallás a légitársaságok hozzájárulásáról</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120041"
+                  type="tns:Block_KEMEL_120041_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Önellenőrzés</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_KEMEL_120001_Type">
+      <annotation>
+         <documentation>Azonosító adatok</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120017"
+                  type="tns:FieldGroup_KEMEL_120017_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Adózó adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120081"
+                  type="tns:FieldGroup_KEMEL_120081_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Ügyintéző adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120082"
+                  type="tns:FieldGroup_KEMEL_120082_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Bevallási adatok</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_KEMEL_120014_Type">
+      <annotation>
+         <documentation>Bevallás a kőolajtermék-előállító különadójáról</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120015"
+                  type="tns:FieldGroup_KEMEL_120015_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>A kőolajtermék-előállító különadója</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_KEMEL_120018_Type">
+      <annotation>
+         <documentation>Bevallás a megújuló energiaforrásból energiát termelők különadójáról</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120019"
+                  type="tns:FieldGroup_KEMEL_120019_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>A megújuló energiaforrásból vagy hulladékból nyert energiáról</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_KEMEL_120025_Type">
+      <annotation>
+         <documentation>Bevallás a kiegyenlítő szabályozási kapacitás szolgáltatás különadójáról</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120026"
+                  type="tns:FieldGroup_KEMEL_120026_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>A kiegyenlítő szabályozási kapacitás szolgáltatás különadójáról</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_KEMEL_120030_Type">
+      <annotation>
+         <documentation>Bevallás a légitársaságok hozzájárulásáról</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120031"
+                  type="tns:FieldGroup_KEMEL_120031_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Induló utasok száma 2023. január 1-jét megelőzően (adónemkód: 481)</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120084"
+                  type="tns:FieldGroup_KEMEL_120084_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Induló utasok száma 2023. január 1-jétől (adónemkód: 481)</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120085"
+                  type="tns:FieldGroup_KEMEL_120085_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Induló utasok száma 2023. március 1-jétől (adónemkód: 481)</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120086"
+                  type="tns:FieldGroup_KEMEL_120086_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Induló utasok száma 2023. augusztus 1-jétől (adónemkód: 481)</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120034"
+                  type="tns:FieldGroup_KEMEL_120034_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>A légi járművet üzemeltető légitársaság az adatszolgáltatási kötelezettségét nem teljesítette</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_KEMEL_120041_Type">
+      <annotation>
+         <documentation>Önellenőrzés</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120083"
+                  type="tns:FieldGroup_KEMEL_120083_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Ismételt önellenőrzés jelölése</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120043"
+                  type="tns:FieldGroup_KEMEL_120043_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Önellenőrzési pótlék</documentation>
+            </annotation>
+         </element>
+         <element name="Chain_120078"
+                  type="tns:Chain_KEMEL_120078_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Nyilatkozat az önellenőrzés indokáról, ha az adókötelezettséget megállapító jogszabály alaptörvény-ellenes vagy az Európai Unió kötelező jogi aktusába ütközik</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Chain_KEMEL_120078_Type">
+      <annotation>
+         <documentation>Nyilatkozat az önellenőrzés indokáról, ha az adókötelezettséget megállapító jogszabály alaptörvény-ellenes vagy az Európai Unió kötelező jogi aktusába ütközik</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="3">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120079"
+                           type="tns:FieldGroup_KEMEL_120079_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Nyilatkozat az önellenőrzés indokáról, ha az adókötelezettséget megállapító jogszabály alaptörvény-ellenes vagy az Európai Unió kötelező jogi aktusába ütközik</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120017_Type">
+      <annotation>
+         <documentation>Adózó adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószám (adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Jogelőd adószáma (jogelőd_adószám)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adóazonosító jel (adoazon)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Név (Adózó_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120081_Type">
+      <annotation>
+         <documentation>Ügyintéző adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Neve (ügyintéző_neve)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001C007A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Telefonszáma (ügyintéző_telefonszáma)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120082_Type">
+      <annotation>
+         <documentation>Bevallási adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001D001A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallási időszak ¦ Kezdete (bevtol)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D002A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallási időszak ¦ Vége (bevig)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D004A"
+                  minOccurs="0"
+                  type="tns:Enum_KEMEL_0A0001D004A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás ¦ Típusa (bev_tipusa)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D005A"
+                  minOccurs="0"
+                  type="tns:Enum_KEMEL_0A0001D005A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás ¦ Fajtája (bev_fajtaja)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D006A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bevallás ¦ Eltérő üzleti év jelölése (Eltérő_üzleti_év_jelölése)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D007A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kőolajtermék-előállító különadója (kőolaj_különadó)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D008A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Megújuló energiaforrásból energiát termelők különadója (megújuló_különadó)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D00500A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kiegyenlítő szabályozási kapacitás szolgáltatás különadója (kiegyenlítő_különadó)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D009A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Légitársaságok hozzájárulása (légitársaságok_hozzájárulása)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D003A"
+                  minOccurs="0"
+                  type="tns:Enum_KEMEL_0A0001D003A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózói javítás, önellenőrzés ¦ Bevallás jellege (bev_jellege)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adózói javítás, önellenőrzés ¦ Hibásnak minősített bevallás vonalkódja (vonalkód)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120015_Type">
+      <annotation>
+         <documentation>A kőolajtermék-előállító különadója</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0B0001C0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kőolajtermék-előállító különadója (adónemkód: 232) ¦ Adó alapja ([01]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0B0001C0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kőolajtermék-előállító különadója (adónemkód: 232) ¦ Adó összege ([01]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120019_Type">
+      <annotation>
+         <documentation>A megújuló energiaforrásból vagy hulladékból nyert energiáról</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0C0001C0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A megújuló energiaforrásból vagy hulladékból nyert energiával termelt villamos energia, valamint a kapcsoltan termelt villamos energia kötelező átvételéről és átvételi áráról szóló 389/2007. (XII. 23.) Korm. rendelet (KÁT rendelet) hatálya alá tartozó kötelező átvételre jogosult termelő adója (adónemkód:232) ¦ Adó alapja ([02]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A megújuló energiaforrásból vagy hulladékból nyert energiával termelt villamos energia, valamint a kapcsoltan termelt villamos energia kötelező átvételéről és átvételi áráról szóló 389/2007. (XII. 23.) Korm. rendelet (KÁT rendelet) hatálya alá tartozó kötelező átvételre jogosult termelő adója (adónemkód:232) ¦ Adó összege ([02]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0002AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A megújuló energiaforrásból termelt villamos energia kötelező átvételi és prémium típusú támogatásáról szóló 299/2017. (X. 17.) Korm. rendelet (METÁR rendelet) hatálya alá tartozó kötelező átvételre jogosult termelő adója ¦ Adó alapja ([02]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0002BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A megújuló energiaforrásból termelt villamos energia kötelező átvételi és prémium típusú támogatásáról szóló 299/2017. (X. 17.) Korm. rendelet (METÁR rendelet) hatálya alá tartozó kötelező átvételre jogosult termelő adója ¦ Adó összege ([02]B2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0003AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A METÁR rendelet hatálya alá tartozó zöld prémium típusú támogatásra jogosult termelő adója ¦ Adó alapja ([02]A3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0003BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A METÁR rendelet hatálya alá tartozó zöld prémium típusú támogatásra jogosult termelő adója ¦ Adó összege ([02]B3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0004BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Különadó összesen: ¦ Adó összege ([02]B4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120026_Type">
+      <annotation>
+         <documentation>A kiegyenlítő szabályozási kapacitás szolgáltatás különadójáról</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0H0001C50003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kiegyenlítő szabályozási kapacitás szolgáltatás - extraprofit adóról szóló 197/2022. (VI.4.) Korm. rendelet 3/A §-a szerinti - különadója (adónemkód: 232) ¦ Adó alapja ([05]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0H0001C50002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kiegyenlítő szabályozási kapacitás szolgáltatás - extraprofit adóról szóló 197/2022. (VI.4.) Korm. rendelet 3/A §-a szerinti - különadója (adónemkód: 232) ¦ Adó összege ([05]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0H0001C00510A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 2022. január - november időszakra vonatkozóan: az adó összege alapján az I. részlet (2022. december 20-ig) ¦ Adó összege ([05]B2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0H0001C00511A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A II. részlet (2023. február 20-ig) ¦ Adó összege ([05]B3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120031_Type">
+      <annotation>
+         <documentation>Induló utasok száma 2023. január 1-jét megelőzően (adónemkód: 481)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0D0001C0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének a) pontja alapján (3900 Ft/fő) ¦ Hozzájárulás alapja ([03]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének a) pontja alapján (3900 Ft/fő) ¦ Hozzájárulás ([03]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0002AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének b) pontja alapján (9750 Ft/fő) ¦ Hozzájárulás alapja ([03]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0002BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének b) pontja alapján (9750 Ft/fő) ¦ Hozzájárulás ([03]B2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001C0003BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Légitársaság hozzájárulása összesen ¦ Hozzájárulás ([03]B3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120084_Type">
+      <annotation>
+         <documentation>Induló utasok száma 2023. január 1-jétől (adónemkód: 481)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0D0001E00513A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének a) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (2700 Ft/fő) ¦ Hozzájárulás alapja ([03]A4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00519A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének a) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (2700 Ft/fő) ¦ Hozzájárulás ([03]B4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00514A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (3900 Ft/fő) ¦ Hozzájárulás alapja ([03]A5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00520A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (3900 Ft/fő) ¦ Hozzájárulás ([03]B5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00515A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (5100 Ft/fő) ¦ Hozzájárulás alapja ([03]A6)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00521A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (5100 Ft/fő) ¦ Hozzájárulás ([03]B6)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00516A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének b) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (6800 Ft/fő) ¦ Hozzájárulás alapja ([03]A7)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00522A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének b) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (6800 Ft/fő) ¦ Hozzájárulás ([03]B7)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00517A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (9750 Ft/fő) ¦ Hozzájárulás alapja ([03]A8)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00523A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (9750 Ft/fő) ¦ Hozzájárulás ([03]B8)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00518A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (12700 Ft/fő) ¦ Hozzájárulás alapja ([03]A9)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00524A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (12700 Ft/fő) ¦ Hozzájárulás ([03]B9)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0D0001E00525A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Légitársaság hozzájárulása összesen ¦ Hozzájárulás ([03]B10)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120085_Type">
+      <annotation>
+         <documentation>Induló utasok száma 2023. március 1-jétől (adónemkód: 481)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0I0001C50008A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének a) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (1600 Ft/fő) ¦ Hozzájárulás alapja ([03_01]A11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50014A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének a) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (1600 Ft/fő) ¦ Hozzájárulás ([03_01]B11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50009A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (3900 Ft/fő) ¦ Hozzájárulás alapja ([03_01]A12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50015A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (3900 Ft/fő) ¦ Hozzájárulás ([03_01]B12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50010A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (6200 Ft/fő) ¦ Hozzájárulás alapja ([03_01]A13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50016A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (6200 Ft/fő) ¦ Hozzájárulás ([03_01]B13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50011A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének b) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (3900 Ft/fő) ¦ Hozzájárulás alapja ([03_01]A14)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50004A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 197/2022. (VI. 4.) Korm. rendelet 5. § (4) bekezdésének b) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (3900 Ft/fő) ¦ Hozzájárulás ([03_01]B14)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50012A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (9750 Ft/fő) ¦ Hozzájárulás alapja ([03_01]A15)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (9750 Ft/fő) ¦ Hozzájárulás ([03_01]B15)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50013A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (15600 Ft/fő) ¦ Hozzájárulás alapja ([03_01]A16)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (15600 Ft/fő) ¦ Hozzájárulás ([03_01]B16)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0I0001C50007A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Légitársaság hozzájárulása összesen ¦ Hozzájárulás ([03_01]B17)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120086_Type">
+      <annotation>
+         <documentation>Induló utasok száma 2023. augusztus 1-jétől (adónemkód: 481)</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0J0001C50017A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 2023. évi LIX. törvény 2. § (3) bekezdés a) pontja és a 197/2022.¤(VI. 4.) Korm. rendelet 5. § (1) bekezdése alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (1600 Ft/fő) ¦ Hozzájárulás alapja ([03_02]A18)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50023A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 2023. évi LIX. törvény 2. § (3) bekezdés a) pontja és a 197/2022.¤(VI. 4.) Korm. rendelet 5. § (1) bekezdése alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (1600 Ft/fő) ¦ Hozzájárulás ([03_02]B18)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50018A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (3900 Ft/fő) ¦ Hozzájárulás alapja ([03_02]A19)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50024A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (3900 Ft/fő) ¦ Hozzájárulás ([03_02]B19)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50019A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (6200 Ft/fő) ¦ Hozzájárulás alapja ([03_02]A20)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50025A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (6200 Ft/fő) ¦ Hozzájárulás ([03_02]B20)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50020A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 2023. évi LIX. törvény 2. § (3) bekezdés b) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (3900 Ft/fő) ¦ Hozzájárulás alapja ([03_02]A21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50026A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A 2023. évi LIX. törvény 2. § (3) bekezdés b) pontja alapján, amennyiben: ¦ az egy ülésre jutó kibocsátási érték kevesebb, mint 10,50 kg (3900 Ft/fő) ¦ Hozzájárulás ([03_02]B21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50021A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (9750 Ft/fő) ¦ Hozzájárulás alapja ([03_02]A22)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50027A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 10,50 kg vagy annál magasabb és 17,50 kg-nál alacsonyabb (9750 Ft/fő) ¦ Hozzájárulás ([03_02]B22)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50022A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (15600 Ft/fő) ¦ Hozzájárulás alapja ([03_02]A23)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50028A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>az egy ülésre jutó kibocsátási érték 17,50 kg vagy annál magasabb (15600 Ft/fő) ¦ Hozzájárulás ([03_02]B23)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0J0001C50029A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Légitársaság hozzájárulása összesen ¦ Hozzájárulás ([03_02]B24)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120034_Type">
+      <annotation>
+         <documentation>A légi járművet üzemeltető légitársaság az adatszolgáltatási kötelezettségét nem teljesítette</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0D0001D00512A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(légi_adatsz_kötelesség)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120083_Type">
+      <annotation>
+         <documentation>Ismételt önellenőrzés jelölése</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0E0001C001A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(ism_önell)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120043_Type">
+      <annotation>
+         <documentation>Önellenőrzési pótlék</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0E0001D0003AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kőolajtermék-előállító különadója ¦ Adó alapjának változása (+/-) ([04]A1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001D0003BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kőolajtermék-előállító különadója ¦ Adóösszeg változása (+/-) ([04]B1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001D0004CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kőolajtermék-előállító különadója ¦ Önellenőrzési pótlék összege ([04]C2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001E0010AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A megújuló energiaforrásból energiát termelők különadója ¦ Adó alapjának változása (+/-) ([04]A10)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001E0010BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A megújuló energiaforrásból energiát termelők különadója ¦ Adóösszeg változása (+/-) ([04]B10)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001E0011CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A megújuló energiaforrásból energiát termelők különadója ¦ Önellenőrzési pótlék összege ([04]C11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001G00505A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kiegyenlítő szabályozási kapacitás szolgáltatás különadója ¦ Adó alapjának változása (+/-) ([04]A30)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001G00506A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kiegyenlítő szabályozási kapacitás szolgáltatás különadója ¦ Adóösszeg változása (+/-) ([04]B30)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001G00504A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A kiegyenlítő szabályozási kapacitás szolgáltatás különadója ¦ Önellenőrzési pótlék összege ([04]C31)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001F0020AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Légitársaság hozzájárulása ¦ Hozzájárulás alapjának változása (+/-) ([04]A20)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001F0020BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Légitársaság hozzájárulása ¦ Hozzájárulás változása (+/-) ([04]B20)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0E0001F0021CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Légitársaság hozzájárulása ¦ Önellenőrzési pótlék összege ([04]C21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9+-]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_KEMEL_120079_Type">
+      <annotation>
+         <documentation>Nyilatkozat az önellenőrzés indokáról, ha az adókötelezettséget megállapító jogszabály alaptörvény-ellenes vagy az Európai Unió kötelező jogi aktusába ütközik</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0FXXXXC0001AA"
+                  minOccurs="0"
+                  type="tns:Enum_KEMEL_0FXXXXC0001AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A nyilatkozattal érintett adónem kódja ([EUNY]A1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0FXXXXC0002AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A nyilatkozattal érintett adónem megnevezése ([EUNY]A2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0003AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0004AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0005AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0006AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A6)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0007AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A7)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0008AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A8)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0009AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A9)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0010AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A10)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0011AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A11)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0012AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A12)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0013AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A13)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0014AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A14)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0015AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A15)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0016AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A16)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0017AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A17)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0018AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A18)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0019AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A19)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0020AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A20)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0021AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0022AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A22)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0023AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A23)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0024AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A24)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0025AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Nyilatkozat részletes kifejtése jogszabályi hivatkozással ([EUNY]A25)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+</schema>
